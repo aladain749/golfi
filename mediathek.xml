@@ -1,0 +1,168 @@
+<items>
+<item>
+<title>[COLOR cyan]CANALSAT[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat>
+<![CDATA[ <title>[makelist.param2]</title> <link>$doregex[play]</link> ]]>
+</listrepeat>
+<expres>
+<![CDATA[ #$pyFunction import re, requests, xbmc, xbmcaddon, xbmcgui, time import urllib.parse def GetLSProData(page_data,Cookie_Jar,m):#vbprofi query = str(showKeyBoard()) print( "xFehler: " + query) #suche = solver.get() search = urllib.parse.quote_plus(query) url = 'https://sterktv1.net/?s=' + search #source = requests.get(url, headers={'user-agent':'Mozilla/5.0', 'referer':url, 'accept':'*/*'},verify=False).text.replace('\/', '/') source = requests.get(url, headers={'user-agent':'Mozilla/5.0', 'referer':url}, verify=True).text #.replace('\/', '/') strurl = re.findall('<h2 class=".*?a href="(.*?)".*?">(.*?)</a></h2>', source) #return ('%s|user-agent=ipad&origin=' + url + '&referer=' + url % strurl) return strurl ''' #class# class InputWindow(xbmcgui.WindowDialog): def __init__(self, *args, **kwargs): self.txt = kwargs.get('txt','') xbmcgui.WindowXMLDialog.__init__(self) #self.addControl(self.txt) #path = xbmcaddon.Addon().getAddonInfo('path') self.kbd = xbmc.Keyboard() self.kbd.setHeading( self.txt) def get(self): self.show() time.sleep(2) self.kbd.doModal() if (self.kbd.isConfirmed()): text = self.kbd.getText() self.close() return text self.close() return 'taybet' ''' #suchen def showKeyBoard(sDefaultText=""): # Create the keyboard object and display it modal oKeyboard = xbmc.Keyboard(sDefaultText) oKeyboard.doModal() # If key board is confirmed and there was text entered return the text if oKeyboard.isConfirmed(): sSearchText = oKeyboard.getText() if len(sSearchText) > 0: return sSearchText return False ]]>
+</expres>
+<page/>
+</regex>
+<regex>
+<name>play</name>
+<expres>
+<![CDATA[ #$pyFunction import re, requests def GetLSProData(page_data,Cookie_Jar,m): #url = 'https://medyahaber.info/category/ozel-program/' url = '[makelist.param1]' #source = requests.get(url, headers={'user-agent':'Mozilla/5.0', 'referer':url, 'accept':'*/*'},verify=False).text.replace('\/', '/') source = requests.get(url, headers={'user-agent':'Mozilla/5.0', 'referer':url}, verify=True).text #.replace('\/', '/') strurl = re.findall('<source src="(.*?\.mp4)"', source)[0] if 'http' not in strurl: strurl = 'https://sterktv1.net' + strurl #return ('%s|user-agent=ipad&origin=' + url + '&referer=' + url % strurl) return strurl ]]>
+</expres>
+<page/>
+<cookiejar/>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0</agent>
+</regex>
+</item>
+<item>
+<title>[COLOR cyan]Dosya Taybet - Sterk TV[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat>
+<![CDATA[ <title>[COLOR cyan] [makelist.param2] [/COLOR]</title> <link>$doregex[play]</link> <thumbnail>n/a</thumbnail> ]]>
+</listrepeat>
+<expres>
+<![CDATA[ #$pyFunction import re, requests def GetLSProData(page_data,Cookie_Jar,m): url = 'https://sterktv1.net/?s=Dosya+Taybet' #source = requests.get(url, headers={'user-agent':'Mozilla/5.0', 'referer':url, 'accept':'*/*'},verify=False).text.replace('\/', '/') source = requests.get(url, headers={'user-agent':'Mozilla/5.0', 'referer':url}, verify=True).text #.replace('\/', '/') strurl = re.findall('<h2 class=".*?a href="(.*?)".*?">(.*?)</a></h2>', source) #return ('%s|user-agent=ipad&origin=' + url + '&referer=' + url % strurl) return strurl ]]>
+</expres>
+<page/>
+<cookiejar/>
+</regex>
+<regex>
+<name>play</name>
+<expres>
+<![CDATA[ #$pyFunction import re, requests def GetLSProData(page_data,Cookie_Jar,m): #url = 'https://medyahaber.info/category/ozel-program/' url = '[makelist.param1]' #source = requests.get(url, headers={'user-agent':'Mozilla/5.0', 'referer':url, 'accept':'*/*'},verify=False).text.replace('\/', '/') source = requests.get(url, headers={'user-agent':'Mozilla/5.0', 'referer':url}, verify=True).text #.replace('\/', '/') strurl = 'https://sterktv1.net' + re.findall('<source src="(.*?\.mp4)"', source)[0] #return ('%s|user-agent=ipad&origin=' + url + '&referer=' + url % strurl) return strurl ]]>
+</expres>
+<page/>
+<cookiejar/>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0</agent>
+</regex>
+</item>
+<item>
+<title>[COLOR cyan]ÖZEL PROGRAM arşivleri - Medya Haber TV[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat>
+<![CDATA[ <title>[COLOR cyan] [makelist.param2] [/COLOR] [makelist.param3]</title> <link>$doregex[play]</link> <thumbnail>n/a</thumbnail> ]]>
+</listrepeat>
+<expres>
+<![CDATA[ #$pyFunction import re, requests def GetLSProData(page_data,Cookie_Jar,m): url = 'https://medyahaber.info/category/ozel-program/' #source = requests.get(url, headers={'user-agent':'Mozilla/5.0', 'referer':url, 'accept':'*/*'},verify=False).text.replace('\/', '/') source = requests.get(url, headers={'user-agent':'Mozilla/5.0', 'referer':url}, verify=True).text.replace('\/', '/') strurl = re.findall('(?s)<h3 class.*?a href="(.*?)">(.*?)</a>.*?</h3>.*?<i class=.*?</i>.*?\t (.*?)</s', source) #return ('%s|user-agent=ipad&origin=' + url + '&referer=' + url % strurl) return strurl ]]>
+</expres>
+<page/>
+<cookiejar/>
+</regex>
+<regex>
+<name>play</name>
+<expres>
+<![CDATA[ #$pyFunction import re, requests def GetLSProData(page_data,Cookie_Jar,m): #url = 'https://medyahaber.info/category/ozel-program/' url = '[makelist.param1]' #source = requests.get(url, headers={'user-agent':'Mozilla/5.0', 'referer':url, 'accept':'*/*'},verify=False).text.replace('\/', '/') source = requests.get(url, headers={'user-agent':'Mozilla/5.0', 'referer':url}, verify=True).text.replace('\/', '/') strurl = re.findall('(https:.*?.mp4)\&', source)[0] #return ('%s|user-agent=ipad&origin=' + url + '&referer=' + url % strurl) return strurl ]]>
+</expres>
+<page/>
+<cookiejar/>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0</agent>
+</regex>
+</item>
+<item>
+<title>[COLOR cyan]Med Muzîk TV - Youtube Channel[/COLOR]</title>
+<utube>UC1EJB7plDBWXZXrgBKnLWVQ</utube>
+<info>https://www.youtube.com/channel/UC1EJB7plDBWXZXrgBKnLWVQ</info>
+</item>
+<item>
+<title>[COLOR cyan]Çira tv - Youtube Channel[/COLOR]</title>
+<utube>UCJIfzeCjl7uWxydkv-i-8eQ</utube>
+</item>
+<item>
+<title>[COLOR cyan]Ronahi TV - Youtube Channel[/COLOR]</title>
+<utube>UCiH6yCKVhI6UBqtT9FfIaAg</utube>
+</item>
+<item>
+<title>[COLOR cyan]Zarok TV - Youtube Channel[/COLOR]</title>
+<utube>UCVziQcxiRGoWpjpT9Lv16Qw</utube>
+</item>
+<item>
+<title>[COLOR cyan]Gerilla TV[/COLOR] (für langsame Verbindung)</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat>
+<![CDATA[ <title>Seite [makelist.param1]</title> <link>$doregex[main]</link> ]]>
+</listrepeat>
+<expres>'(.*?)'</expres>
+<page>$doregex[zahl]</page>
+</regex>
+<regex>
+<name>zahl</name>
+                                           
+<expres>
+<![CDATA[ #$pyFunction import re def GetLSProData(page_data,Cookie_Jar,m):#vbprofi # max = re.findall('<a href=".*?page=\d{3}">(.*?)</a>', re.findall('pagination pagination-centered(?s)(.*?)</div><!-- #primary -->', page_data)[0])[0] max = re.findall('<a href=".*?page=\d{2}">(.*?)</a>.*?\n.*?\n.*?\n.*?\&raquo;', re.findall('pagination pagination-centered(?s)(.*?)back-top', page_data)[0])[0] liste = "" for i in xrange(1, int(max)+1): liste += "'" + str(i) + "'" # liste = """'1''2''3'""" #list(range(17)) return liste ]]>
+</expres>
+<page>http://gerilatv.com//newvideos.php</page>
+</regex>
+<regex>
+<name>main</name>
+<listrepeat>
+<![CDATA[ <title>[main.param3]</title> <link>$doregex[GetFile]</link> <thumbnail>[main.param2]</thumbnail> ]]>
+</listrepeat>
+<expres>
+<![CDATA[ <a href="(.*?)".*?"><span class=".*?"><img src="(.*?)".*?alt="(.*?)" width= ]]>
+</expres>
+<page>http://gerilatv.com//newvideos.php?page=[makelist.param1]</page>
+</regex>
+<regex>
+<name>GetFile</name>
+<expres>
+<![CDATA[ video\/mp4.*?src="(htt.*?)" ]]>
+</expres>
+<page>[main.param1]</page>
+</regex>
+</item>
+<item>
+<title>[COLOR cyan]Gerilla TV[/COLOR] (für schnelle Verbindung)</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat>
+<![CDATA[ <title>[makelist.param3]</title> <link>$doregex[GetFile]</link> <thumbnail>[makelist.param2]</thumbnail> ]]>
+</listrepeat>
+<expres>
+<![CDATA[ <a href="(.*?)".*?"><span class=".*?"><img src="(.*?)".*?alt="(.*?)" width= ]]>
+</expres>
+<page>$doregex[multipage]</page>
+<!--  <page>http://gerilatv.com//newvideos.php</page>  -->
+</regex>
+<regex>
+<name>GetFile</name>
+<expres>
+<![CDATA[ video\/mp4.*?src="(htt.*?)" ]]>
+</expres>
+<page>[makelist.param1]</page>
+</regex>
+<regex>
+   
+<name>multipage</name>
+<expres>
+<![CDATA[ #$pyFunction import requests, re def GetLSProData(page_data,Cookie_Jar,m): myheaders = {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/47.0.2526.70 Mobile/13C71 Safari/601.1.46', 'Referer': 'http://gerilatv.com/'} # max = re.findall('<a href=".*?page=\d{3}">(.*?)</a>', re.findall('pagination pagination-centered(?s)(.*?)</div><!-- #primary -->', page_data)[0])[0] # max = re.findall('<a href=".*?page=\d{2}">(.*?)</a>.*?\n.*?\n.*?\n.*?\&raquo;', re.findall('pagination pagination-centered(?s)(.*?)</div><!-- #primary -->', page_data)[0])[0] max = re.findall('<a href=".*?page=\d{2}">(.*?)</a>.*?\n.*?\n.*?\n.*?\&raquo;', re.findall('pagination pagination-centered(?s)(.*?)back-top', page_data)[0])[0] liste = "" for i in xrange(1, int(max)+1): liste += requests.get('http://gerilatv.com//newvideos.php?page=' + str(i), headers= myheaders).text #codepage1 = requests.get('http://gerilatv.com//newvideos.php', headers= myheaders).text # code = codepage1 return liste ]]>
+</expres>
+  
+<page>http://gerilatv.com/newvideos.php</page>
+  
+</regex>
+</item>
+<item>
+<title>[COLOR cyan]Network for an Alternative Quest - YouTube[/COLOR]</title>
+<utube>UCfvAXN4TnvlRl_dUQXiQJ3g</utube>
+<info> Network for an Alternative Quest Beschreibung: Conference videos Videos der Konferenzen Konferans videoları Vîdeoyên konferansan https://www.youtube.com/channel/UCfvAXN4TnvlRl_dUQXiQJ3g/ </info>
+</item>
+<item>
+<title>Adem Karacoban - Youtube</title>
+<utube>UCFzMR_MHVwEQz2weOgTc8Zg</utube>
+</item>
+</items>
