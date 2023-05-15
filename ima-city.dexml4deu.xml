@@ -8,9 +8,9 @@ https://github.com/jnk22/kodinerds-iptv
 <link>no</link>
 </item>
 <item>
-<title>Canalsat</title>
+<title>TVs Deutschland</title>
 <link>ignoreme</link>
-<externallink>https://raw.githubusercontent.com/aladain749/golfi/main/kodi_tv_main.m3u</externallink>
+<externallink>https://github.com/jnk22/kodinerds-iptv/raw/master/iptv/kodi/kodi_tv_main.m3u</externallink>
 </item>
 <item>
 <title>Regional TVs</title>
