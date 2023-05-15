@@ -152,7 +152,8 @@ https://github.com/jnk22/kodinerds-iptv
 </item>
 <item>
 <title>[COLOR gold]CANALSAT- [/COLOR] 7[COLOR RED]neu von 13.02.2021[/COLOR]</title>
-<link>https://github.com/jnk22/kodinerds-iptv/raw/master/iptv/kodi/kodi_tv_extra.m3u</link>
+<link>ignoreme</link>
+<externallink>https://github.com/jnk22/kodinerds-iptv/raw/master/iptv/kodi/kodi_tv_extra.m3u</externallink>	
 <regex>
 <name>makelist</name>
 <listrepeat>
