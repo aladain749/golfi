@@ -156,7 +156,7 @@ Radio sender
 </regex>
 </item>
 <item>
-<title>[COLOR gold]deutsche private Sender [/COLOR] tvlivegucken.com [COLOR RED]neu von 13.02.2021[/COLOR]</title>
+<title>[COLOR gold]CANALSAT- [/COLOR] 7[COLOR RED]neu von 13.02.2021[/COLOR]</title>
 <link>https://github.com/jnk22/kodinerds-iptv/raw/master/iptv/kodi/kodi_tv_extra.m3u</link>
 <regex>
 <name>makelist</name>
