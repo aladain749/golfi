@@ -1,7 +1,7 @@
 <items>
 <item>
 <title>[COLOR cyan]CANALSAT[/COLOR]</title>
-<link>$doregex[makelist]</link>
+<link>https://raw.githubusercontent.com/aladain749/golfi/main/image-1</link>
 <regex>
 <name>makelist</name>
 <listrepeat>
