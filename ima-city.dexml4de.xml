@@ -4,7 +4,7 @@ quelle für deutsche und internationale free tv und radio
 https://github.com/jnk22/kodinerds-iptv
  -->
 <item>
-<title>[COLOR lime][B] Frei/Free [/B][/COLOR]</title>
+<title>[COLOR lime][B] Golfi [/B][/COLOR]</title>
 <link>no</link>
 </item>
 <item>
@@ -32,13 +32,7 @@ https://github.com/jnk22/kodinerds-iptv
 <link>ignoreme</link>
 <externallink>https://github.com/jnk22/kodinerds-iptv/raw/master/iptv/kodi/kodi_tv_shop.m3u</externallink>
 </item>
-<!-- 
-Radio sender
-###
-####
-####
-###
- -->
+
 <item>
 <title>CANALSAT-6</title>
 <link>ignoreme</link>
