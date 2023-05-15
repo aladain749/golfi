@@ -1,0 +1,510 @@
+#EXTM3U
+#EXTINF:-1 tvg-logo="https://aladain.000webhostapp.com/aladain%20logo/playlist.png" group-title="IPTV",[COLOR yellow][B]                                                    [[COLOR lime][B]Playlist - French[COLOR yellow]][/B][/COLOR]
+http://google.com
+#EXTINF:-1 tvg-logo="https://aladain.000webhostapp.com/aladain%20logo/update.png" group-title="Golfi ",[COLOR yellow][B]                                     [[COLOR magenta][B]Golfi Mise a Jour Le 01/05/2023[COLOR yellow]][/B][/COLOR]
+http://google.com
+#EXTVLCOPT:network-caching=10000
+#EXTINF:-1,FR_NATIONAL_GEO_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/4502
+#EXTINF:-1,FR_NATIONAL_GEO_WILD_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/48679
+#EXTINF:-1,FR: NAT GEO WILD HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53298
+#EXTINF:-1,FR: NATIONAL GEO HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53299
+#EXTINF:-1,FR_Luxe_TV_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/48560
+#EXTINF:-1,FR_POLAR+_HD
+http://server.sibfungold.info:8080/fawzi/fawzi123/48558
+#EXTINF:-1,FR_Clubbing_TV
+http://server.sibfungold.info:8080/fawzi/fawzi123/48786
+#EXTINF:-1,FR_ALTICE_STUDIO_HD
+http://server.sibfungold.info:8080/fawzi/fawzi123/50067
+#EXTINF:-1,FR_LFM_TV
+http://server.sibfungold.info:8080/fawzi/fawzi123/3725
+#EXTINF:-1,FR_VICELAND_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/4773
+#EXTINF:-1,FR_WARNER_TV_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/49198
+#EXTINF:-1,FR_MY_CUISINE_TV_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/49200
+#EXTINF:-1,FR_DISCOVERY_FAMILY_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/49202
+#EXTINF:-1,FR_AB_EXPLORE_HD
+http://server.sibfungold.info:8080/fawzi/fawzi123/50934
+#EXTINF:-1,FR_MOTORSPORT_TV_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/48785
+#EXTINF:-1,FR_MOTORSPORT_TV_HD
+http://server.sibfungold.info:8080/fawzi/fawzi123/51663
+#EXTINF:-1,FR_NOVELAS_TV_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/51168
+#EXTINF:-1,FR_13eme_Rue_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/104
+#EXTINF:-1,FR_6ter_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/372
+#EXTINF:-1,FR_AB1_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/48676
+#EXTINF:-1,FR_AB3_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/48677
+#EXTINF:-1,FR_Action_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/4555
+#EXTINF:-1,FR_ALTICE_STUDIO_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/48559
+#EXTINF:-1,FR_ANIMAUX_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/47758
+#EXTINF:-1,FR_Arte_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/48669
+#EXTINF:-1,FR_Bet_Etoile_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/48678
+#EXTINF:-1,FR_BFM_Business_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/47785
+#EXTINF:-1,FR_BFM_PARIS_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/52223
+#EXTINF:-1,FR_Boing_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/48626
+#EXTINF:-1,FR_Boomerang_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/48565
+#EXTINF:-1,FR_C8_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/4501
+#EXTINF:-1,FR_CANAL+_CINEMA_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/78
+#EXTINF:-1,FR_Canal+_Kids_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/49209
+#EXTINF:-1,FR_CANAL+_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/76
+#EXTINF:-1,FR_CANAL+_FORMULE_1_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/53533
+#EXTINF:-1,FR_Canal+_Premier_Ligue_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/53531
+#EXTINF:-1,FR_CANAL+_MOTOGP_HD
+http://server.sibfungold.info:8080/fawzi/fawzi123/53530
+#EXTINF:-1,FR_CANAL+_SERIES_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/79
+#EXTINF:-1,FR_Canal+_Sports_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/49208
+#EXTINF:-1,FR_CANAL+_TOP14_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/53529
+#EXTINF:-1,FR_CANAL+_360_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/54657
+#EXTINF:-1,FR_CANAL_ALPHA_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/52490
+#EXTINF:-1,FR_CANAL_J_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/47805
+#EXTINF:-1,FR_Cartoon_Network_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/50952
+#EXTINF:-1,FR_CHASSE_ET_PECHE_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/52778
+#EXTINF:-1,FR_Cherie_25_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/3314
+#EXTINF:-1,FR_Cine_Classic_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/48671
+#EXTINF:-1,FR_Cine_Club_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/2292
+#EXTINF:-1,FR_Cine_Emotion_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/3332
+#EXTINF:-1,FR_Cine_Famiz_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/83
+#EXTINF:-1,Fr_Cine_Frisson_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/86
+#EXTINF:-1,FR_Cine_POLAR_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/4548
+#EXTINF:-1,FR_Cine_Premier_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/85
+#EXTINF:-1,FR_Comedie_+_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/48674
+#EXTINF:-1,FR_Crime_District_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/48673
+#EXTINF:-1,FR_CSTAR_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/4500
+#EXTINF:-1,FR_C_NEWS_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/50857
+#EXTINF:-1,FR_DISCOVERY_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/49688
+#EXTINF:-1,FR_DISCOVERY_INVESTIGATION_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/49211
+#EXTINF:-1,FR_Discovery_Science_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/49860
+#EXTINF:-1,FR_Disney_Channel_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/48622
+#EXTINF:-1,FR_Disney_Cinema_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/50937
+#EXTINF:-1,FR_DISNEY_JUNIOR_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/2298
+#EXTINF:-1,FR_E!_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/52238
+#EXTINF:-1,FR_EQUIDIA_LIVE_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/49748
+#EXTINF:-1,FR_EUROSPORT_1_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/51644
+#EXTINF:-1,FR_EUROSPORT_2_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/51645
+#EXTINF:-1,FR_Foot+ 24/24_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/51647
+#EXTINF:-1,FR_France_02_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/98
+#EXTINF:-1,FR_France_03_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/99
+#EXTINF:-1,FR_France_04_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/100
+#EXTINF:-1,FR_FRANCE_5_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/1695
+#EXTINF:-1,FR_FRANCE_O_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/51043
+#EXTINF:-1,FR_GAME_ONE_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/47801
+#EXTINF:-1,FR_GOLF+_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/49122
+#EXTINF:-1,FR_Golf_Channel_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/2896
+#EXTINF:-1,FR_Gulli_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/47800
+#EXTINF:-1,FR_INFOSPORT_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/50296
+#EXTINF:-1,FR_J-ONE_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/49859
+#EXTINF:-1,FR_LCI_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/52780
+#EXTINF:-1,FR_L_EQUIPE_H265
+http://server.sibfungold.info:8080/fawzi/fawzi123/52720
+#EXTINF:-1,FR_M6_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/96
+#EXTINF:-1,FR_M6_MUSIC_H265
+http://server.sibfungold.info:8080/fawzi/fawzi123/52779
+#EXTINF:-1,FR_Manga_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/47803
+#EXTINF:-1,FR_MEZZO_LIVE_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/49684
+#EXTINF:-1,FR_MTV_France_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/48675
+#EXTINF:-1,FR_Nickelodeon_4Teen_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/50485
+#EXTINF:-1,FR_NICKELODEON_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/52782
+#EXTINF:-1,FR_NICKELODEON_JUNIOR_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/52781
+#EXTINF:-1,FR_NRJ_12_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/49609
+#EXTINF:-1,FR_OCS_CHOC_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/47779
+#EXTINF:-1,FR_OCS_City_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/47777
+#EXTINF:-1,FR_OCS_GEANT_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/47776
+#EXTINF:-1,FR_OCS_Max_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/47774
+#EXTINF:-1,FR_PARAMOUNT_CHANNEL_DECALE_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/51164
+#EXTINF:-1,FR_PARAMOUNT_CHANNEL_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/51174
+#EXTINF:-1,FR_PARIS_PREMIERE_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/50440
+#EXTINF:-1,FR_Piwi_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/47793
+#EXTINF:-1,FR_PLANETE+_CI_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/50482
+#EXTINF:-1,FR_PLANETE_+_A&E_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/2059
+#EXTINF:-1,FR_Planete_+_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/111
+#EXTINF:-1,FR_RMC_Decouvert_HD
+http://server.sibfungold.info:8080/fawzi/fawzi123/4553
+#EXTINF:-1,FR_RTL9_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/3676
+#EXTINF:-1,FR_Science_et_Vie_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/50438
+#EXTINF:-1,FR_SEASON_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/50915
+#EXTINF:-1,FR_SERIE_CLUB_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/105
+#EXTINF:-1,FR_Syfy_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/106
+#EXTINF:-1,FR_TCM_Cinema_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/4547
+#EXTINF:-1,FR_TEVA_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/108
+#EXTINF:-1,FR_TF1_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/95
+#EXTINF:-1,FR_TF1_SERIES_FILMS_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/50139
+#EXTINF:-1,FR_TFX_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/4546
+#EXTINF:-1,FR_TIJI_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/47798
+#EXTINF:-1,FR_TMC_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/371
+#EXTINF:-1,FR_TOONAMI_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/48782
+#EXTINF:-1,FR_TOUTE_L'HISTOIRE_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/52777
+#EXTINF:-1,FR_TREK_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/49466
+#EXTINF:-1,FR_TV5_MONDE_INFO_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/49607
+#EXTINF:-1,FR_TVBREIZH_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/4556
+#EXTINF:-1,FR_Ushuaia_TV_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/48680
+#EXTINF:-1,FR_W9_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/107
+#EXTINF:-1,FR_Weo_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/49158
+#EXTINF:-1,FR_LCP_PUBLIC_SENAT_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/54311
+#EXTINF:-1,FR: CLIQUE TV FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/54525
+#EXTINF:-1,FR_SPORT_EN_FRANCE_HD
+http://server.sibfungold.info:8080/fawzi/fawzi123/54530
+#EXTINF:-1,FR_NAUTICAL_CHANNEL _FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/54531
+#EXTINF:-1,FR_GENERATION_TV_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/54532
+#EXTINF:-1,FR_CANAL+_SPORT_FOOT_HD
+http://server.sibfungold.info:8080/fawzi/fawzi123/54658
+#EXTINF:-1,FR_BRAVA_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/49271
+#EXTINF:-1,FR_FASHION_TV
+http://server.sibfungold.info:8080/fawzi/fawzi123/49265
+#EXTINF:-1,FR_FASHION_FullHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/49707
+#EXTINF:-1,FR_E!_HD
+http://server.sibfungold.info:8080/fawzi/fawzi123/49266
+#EXTINF:-1,FR_HIT_TV_HD
+http://server.sibfungold.info:8080/fawzi/fawzi123/49258
+#EXTINF:-1,FR_KTO_TV
+http://server.sibfungold.info:8080/fawzi/fawzi123/49257
+#EXTINF:-1,FR_LCP_ASSEMBLEE_NATIONALE
+http://server.sibfungold.info:8080/fawzi/fawzi123/49254
+#EXTINF:-1,FR_LUCKY_JACK_TV_HD
+http://server.sibfungold.info:8080/fawzi/fawzi123/49255
+#EXTINF:-1,FR_AUTOMOTO_LA_CHAINE_HD
+http://server.sibfungold.info:8080/fawzi/fawzi123/49262
+#EXTINF:-1,FR_LCI
+http://server.sibfungold.info:8080/fawzi/fawzi123/50065
+#EXTINF:-1,FR_C_NEWS_HD
+http://server.sibfungold.info:8080/fawzi/fawzi123/50066
+#EXTINF:-1,FR_ROUGE_TV_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/50163
+#EXTINF:-1,FR_TV7
+http://server.sibfungold.info:8080/fawzi/fawzi123/50165
+#EXTINF:-1,FR_TV8_MONT_BLANC_HD
+http://server.sibfungold.info:8080/fawzi/fawzi123/51613
+#EXTINF:-1,FR_LA_TELE_FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/51608
+#EXTINF:-1,FR: TF1 HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53268
+#EXTINF:-1,FR: M6 HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53269
+#EXTINF:-1,FR: TF1 SERIES-FILMS HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53270
+#EXTINF:-1,FR: FRANCE 2 HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53271
+#EXTINF:-1,FR: FRANCE 3 HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53272
+#EXTINF:-1,FR: FRANCE 4 HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53273
+#EXTINF:-1,FR: FRANCE 5 HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53274
+#EXTINF:-1,FR: C8 HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53275
+#EXTINF:-1,FR: 6TER HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53276
+#EXTINF:-1,FR: CHERIE 25 HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53277
+#EXTINF:-1,FR: TFX HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53278
+#EXTINF:-1,FR: CANAL +  HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53279
+#EXTINF:-1,FR: CANAL+ CINEMA HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53280
+#EXTINF:-1,FR: CANAL+  FAMILY HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53281
+#EXTINF:-1,FR: CANAL+  DECALE HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53282
+#EXTINF:-1,FR: CANAL+  SERIES HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53283
+#EXTINF:-1,FR: CANAL J HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53284
+#EXTINF:-1,FR: CINE+  CLUB HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53285
+#EXTINF:-1,FR: CINE+  EMOTION HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53286
+#EXTINF:-1,FR: CINE+  FRISSON HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53287
+#EXTINF:-1,FR: CINE+  PREMIER HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53288
+#EXTINF:-1,FR: CINE+ CLASSIC HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53289
+#EXTINF:-1,FR: POLAR+  HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53290
+#EXTINF:-1,FR: ACTION HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53291
+#EXTINF:-1,FR: RTL 9 HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53292
+#EXTINF:-1,FR: SERIE CLUB HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53293
+#EXTINF:-1,FR: OCS CHOC HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53294
+#EXTINF:-1,FR: OCS CITY HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53295
+#EXTINF:-1,FR: OCS GEANTS HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53296
+#EXTINF:-1,FR: OCS MAX HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53297
+#EXTINF:-1,FR: PLANETE+  AVENTURE  HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53300
+#EXTINF:-1,FR: PLANETE+  CI HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53301
+#EXTINF:-1,FR: PLANETE+  HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53302
+#EXTINF:-1,FR: DISCOVERY CHANNEL HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53303
+#EXTINF:-1,FR: DISCOVERY FAMILY HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53304
+#EXTINF:-1,FR: CRIME DISTRICT HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53305
+#EXTINF:-1,FR: DISCOVERY SCIENCE HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53306
+#EXTINF:-1,FR: CHASSE & PECHE HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53307
+#EXTINF:-1,FR: ANIMAUX HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53308
+#EXTINF:-1,FR: AB3 HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53310
+#EXTINF:-1,FR: AUTO MOTO HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53311
+#EXTINF:-1,FR: BFM TV HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53312
+#EXTINF:-1,FR: SCIENCE & VIE HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53313
+#EXTINF:-1,FR: SEASONS HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53314
+#EXTINF:-1,FR: PARIS PREMIERE HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53316
+#EXTINF:-1,FR: PIWI +  HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53317
+#EXTINF:-1,FR: CANAL+  SPORT HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53318
+#EXTINF:-1,FR: RMC SPORT 1 HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53319
+#EXTINF:-1,FR: RMC SPORT 2 HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53320
+#EXTINF:-1,FR: RMC SPORT 3 HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53321
+#EXTINF:-1,FR: RMC SPORT 4 HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53322
+#EXTINF:-1,FR: RMC STORY HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53323
+#EXTINF:-1,FR: BEIN SPORTS 1 HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53324
+#EXTINF:-1,FR: BEIN SPORTS 2 HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53325
+#EXTINF:-1,FR: BEIN SPORTS 3 HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53326
+#EXTINF:-1,FR: TCM CINEMA HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53327
+#EXTINF:-1,FR: CARTOON NETWORK HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53328
+#EXTINF:-1,FR: TELE TOON+ HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53329
+#EXTINF:-1,FR: TEVA HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53331
+#EXTINF:-1,FR: NICKELODEON 4 TEEN HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53332
+#EXTINF:-1,FR: NICKELODEON  HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53333
+#EXTINF:-1,FR: NICKELODEON JUNIOR HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53334
+#EXTINF:-1,FR: NRJ 12 HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53335
+#EXTINF:-1,FR: MANGAS HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53336
+#EXTINF:-1,FR: MCM TOP HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53338
+#EXTINF:-1,FR: GAME ONE HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53339
+#EXTINF:-1,FR: GOLF+   HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53340
+#EXTINF:-1,FR: GULLI HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53341
+#EXTINF:-1,FR: HISTOIRE HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53342
+#EXTINF:-1,FR: INFO SPORT  HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53343
+#EXTINF:-1,FR: J ONE HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53344
+#EXTINF:-1,FR: LA CHAINE METEO HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53345
+#EXTINF:-1,FR: LCI HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53346
+#EXTINF:-1,FR: DISNEY Junior HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53349
+#EXTINF:-1,FR: L'EQUIPE HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53351
+#EXTINF:-1,FR: EUROSPORT 1 HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53353
+#EXTINF:-1,FR: EUROSPORT 2 HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53354
+#EXTINF:-1,FR: FOOT  24/24 HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53355
+#EXTINF:-1,FR: CINE+ FAMIZ HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53356
+#EXTINF:-1,FR: CLIQUE TV HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53357
+#EXTINF:-1,FR: COMEDIE+ HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53358
+#EXTINF:-1,FR: COMEDY CENTRAL HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53359
+#EXTINF:-1,FR: BET HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53360
+#EXTINF:-1,FR: BOOMERANG HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53361
+#EXTINF:-1,FR: DISNEY CHANNEL  HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53362
+#EXTINF:-1,FR: C NEWS HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53363
+#EXTINF:-1,FR: BOING HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53364
+#EXTINF:-1,FR: SYFY HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53366
+#EXTINF:-1,FR: TIJI HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53367
+#EXTINF:-1,FR: TMC HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53368
+#EXTINF:-1,FR: TOONAMI HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53369
+#EXTINF:-1,FR: TOUTE L'HISTOIRE HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53370
+#EXTINF:-1,FR: USHUAIA HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53372
+#EXTINF:-1,FR: MTV HITS HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53373
+#EXTINF:-1,FR: W9 HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53374
+#EXTINF:-1,FR: WARNER TV HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53375
+#EXTINF:-1,FR: CSTAR HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53397
+#EXTINF:-1,FR: RMC DECOUVERTE HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53398
+#EXTINF:-1,FR: E! Entertainment HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/53585
+#EXTINF:-1,FR: ARTE HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/54308
+#EXTINF:-1,FR: FRANCE info HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/54309
+#EXTINF:-1,FR_CSTAR_HITS_FRANCE_HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/54358
+#EXTINF:-1,FR: Trek HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/54502
+#EXTINF:-1,FR: 13Eme Rue HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/54503
+#EXTINF:-1,FR: Canal+ Grand Ecran FHD
+http://server.sibfungold.info:8080/fawzi/fawzi123/54508
+#EXTINF:-1,FR: Canale+ Doc
+http://server.sibfungold.info:8080/fawzi/fawzi123/54509
+#EXTINF:-1,FR_OLYMPIA_HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/54524
+#EXTINF:-1,FR: PARAMOUNT CHANNEL HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/54598
+#EXTINF:-1,FR: PARAMOUNT DECALE HEVC
+http://server.sibfungold.info:8080/fawzi/fawzi123/54599
