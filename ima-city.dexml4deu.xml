@@ -1,0 +1,383 @@
+<items>
+<!-- 
+quelle für deutsche und internationale free tv und radio
+https://github.com/jnk22/kodinerds-iptv
+ -->
+<item>
+<title>[COLOR lime][B] Frei/Free [/B][/COLOR]</title>
+<link>no</link>
+</item>
+<item>
+<title>Canalsat</title>
+<link>ignoreme</link>
+<externallink>https://raw.githubusercontent.com/aladain749/golfi/main/kodi_tv_main.m3u</externallink>
+</item>
+<item>
+<title>Regional TVs</title>
+<link>ignoreme</link>
+<externallink>https://github.com/jnk22/kodinerds-iptv/raw/master/iptv/kodi/kodi_tv_regional.m3u</externallink>
+</item>
+<item>
+<title>Lokal TVs</title>
+<link>ignoreme</link>
+<externallink>https://github.com/jnk22/kodinerds-iptv/raw/master/iptv/kodi/kodi_tv_local.m3u</externallink>
+</item>
+<item>
+<title>Extra TVs</title>
+<link>ignoreme</link>
+<externallink>https://github.com/jnk22/kodinerds-iptv/raw/master/iptv/kodi/kodi_tv_extra.m3u</externallink>
+</item>
+<item>
+<title>Shop TVs</title>
+<link>ignoreme</link>
+<externallink>https://github.com/jnk22/kodinerds-iptv/raw/master/iptv/kodi/kodi_tv_shop.m3u</externallink>
+</item>
+<!-- 
+Radio sender
+###
+####
+####
+###
+ -->
+<item>
+<title>Radio Deutschland</title>
+<link>ignoreme</link>
+<externallink>https://github.com/jnk22/kodinerds-iptv/raw/master/iptv/kodi/kodi_radio_de.m3u</externallink>
+</item>
+<item>
+<title>[COLOR lime][B] Sky/PayTV [/B][/COLOR]</title>
+<link>no</link>
+</item>
+<item>
+<title>[COLOR gold]deutsche private Sender [/COLOR] 2ix2.com [COLOR RED]neu[/COLOR] von 13.02.2021</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat>
+<![CDATA[ <title>[COLOR cyan][makelist.param3][/COLOR]</title> <link>$doregex[play]</link> <thumbnail>[makelist.param2]</thumbnail> ]]>
+</listrepeat>
+<expres>
+<![CDATA[ href="(.*?)".*?\n.*?<img src="(.*?)".*?alt="(.*?)" ]]>
+</expres>
+<page>https://www.2ix2.com/category/deutsche-tv-sender/</page>
+</regex>
+<regex>
+<name>stream</name>
+<expres>
+<![CDATA[ #$pyFunction import re def GetLSProData(page_data,Cookie_Jar,m):#vbprofi if '<iframe src=' in page_data: return re.findall('<p><iframe src="(.*?)"', page_data)[0] elif '<iframe src=' not in page_data: return page_data ]]>
+</expres>
+<!--  <expres><![CDATA[<p><iframe src="(.*?)"]]></expres>  -->
+<page>[makelist.param1]</page>
+</regex>
+<regex>
+<name>play</name>
+<expres>
+<![CDATA[ #$pyFunction import re def GetLSProData(page_data,Cookie_Jar,m):#vbprofi if 'source:' in page_data: return re.findall('[source:|source\: ][\'"](http.*?m3u.*?)[\'"]', page_data)[0] elif 'file:' in page_data: return re.findall(r'file:.*?[\'"](http.*?m3u.*?)[\'"]', page_data)[0] ]]>
+</expres>
+<!--  <expres><![CDATA[[source:|source\: |file\: ]['"](http.*?m3u.*?)['"]]]></expres>  -->
+<page>$doregex[stream]</page>
+       
+<cookieJar/>
+</regex>
+</item>
+<item>
+<title>[COLOR gold]deutsche private Sender [/COLOR] freetvstream.in [COLOR RED]neu von 01.02.2020[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat>
+<![CDATA[ <title>[makelist.param1]</title> <link>[makelist.param2]</link> ]]>
+</listrepeat>
+<expres>
+<![CDATA[ groupspec=="(.*?)".*?drawIFR\("(http.*?)" ]]>
+</expres>
+<page>http://www.freetvstream.in/de/tv/navi.php</page>
+<!-- 
+ <expres><![CDATA[groupspec=="(.*?)".*?drawIFR\("(http.*?)"]]></expres>
+<page>http://www.freetvstream.in/de/tv/embed11.php?id=tele5</page>
+ -->
+</regex>
+</item>
+<item>
+<title>[COLOR gold]deutsche private Sender [/COLOR] pro7livestream.com [COLOR RED]neu[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat>
+<![CDATA[ <title>[COLOR cyan][makelist.param3][/COLOR]</title> <link>$doregex[play]</link> <thumbnail>[makelist.param2]</thumbnail> ]]>
+</listrepeat>
+<expres>
+<![CDATA[ <div class="movie.*?">.*?\n.*?<a href="(.*?)">.*?\n.*?<img src="(.*?)".*?alt="(.*?)" ]]>
+</expres>
+<page>http://www.pro7livestream.com/category/deutsche-tv-live/</page>
+</regex>
+<regex>
+<name>stream</name>
+<expres>
+<![CDATA[ #$pyFunction import re def GetLSProData(page_data,Cookie_Jar,m):#vbprofi if '<iframe src=' in page_data: return re.findall('<p><iframe src="(.*?)"', page_data)[0] elif '<iframe src=' not in page_data: return page_data ]]>
+</expres>
+<!--  <expres><![CDATA[<p><iframe src="(.*?)"]]></expres>  -->
+<page>[makelist.param1]</page>
+</regex>
+<regex>
+<name>play</name>
+<expres>
+<![CDATA[ #$pyFunction import re def GetLSProData(page_data,Cookie_Jar,m):#vbprofi if 'source:' in page_data: return re.findall('[source:|source\: ][\'"](http.*?m3u.*?)[\'"]', page_data)[0] elif 'file:' in page_data: return re.findall(r'file:.*?[\'"](http.*?m3u.*?)[\'"]', page_data)[0] ]]>
+</expres>
+<!--  <expres><![CDATA[[source:|source\: |file\: ]['"](http.*?m3u.*?)['"]]]></expres>  -->
+<page>$doregex[stream]</page>
+       
+<cookieJar/>
+</regex>
+</item>
+<item>
+<title>[COLOR gold]deutsche private Sender [/COLOR] hdtvde.com [COLOR RED]neu von 13.02.2021[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat>
+<![CDATA[ <title>[makelist.param3]</title> <link>$doregex[get=URL]</link> <thumbnail>[makelist.param2]</thumbnail> ]]>
+</listrepeat>
+<expres>
+<![CDATA[ #$pyFunction import requests, re def GetLSProData(page_data,Cookie_Jar,m):#vbprofi url = 'https://www.hdtvde.com/category/deutsche-tv-sender/' headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36','Referer': url} sourceSX = requests.get(url, headers=headers) #return re.findall('(?s)<a href="([^"]+)"[^<]+<img src="([^"]+)".*?alt="(.*?)"', re.findall('<h1.*?Deutsche TV</h1>(?s)(.*?)<h2>', sourceSX.text)[0]) return re.findall('(?s)<a href="([^"]+)".*?<img src="([^"]+)".*?alt="(.*?)"', re.findall('<h1 class.*?Deutsche TV.*?</h1>(?s)(.*?)<h2>', sourceSX.text)[0]) ]]>
+</expres>
+<page/>
+<cookieJar/>
+</regex>
+<regex>
+<name>get=URL</name>
+<expres>
+<![CDATA[ #$pyFunction import requests, re def GetLSProData(page_data,Cookie_Jar,m): ua = 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36' headers = {'User-Agent': ua,'Referer': '[makelist.param1]'} if 'm3u8' in page_data: return re.findall('file:.+?(http.*m3u8.*?)[\'\"]', page_data)[0]+'|User-Agent='+ua+'Referer=[makelist.param1]' else: #get streamurl from iframe item = re.findall('<iframe src="(.*?)"', page_data)[0] source = requests.get(item, headers=headers) return re.findall(r'file:.*?[\'"](http.*?m3u.*?)[\'"]', source.text)[0]+'|User-Agent='+ua+'Referer='+item ]]>
+</expres>
+<page>[makelist.param1]</page>
+<referer>http://www.tv-de.com/category/deutsche-tv/</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36</agent>
+<cookieJar/>
+</regex>
+</item>
+<item>
+<title>[COLOR gold]deutsche private Sender [/COLOR] tvlivegucken.com [COLOR RED]neu von 13.02.2021[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat>
+<![CDATA[ <title>[makelist.param3]</title> <link>$doregex[get=URL]</link> <thumbnail>[makelist.param2]</thumbnail> ]]>
+</listrepeat>
+<expres>
+<![CDATA[ #$pyFunction import requests, re def GetLSProData(page_data,Cookie_Jar,m):#vbprofi url = 'https://www.tvlivegucken.com/category/deutsche-tv-live/' headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36','Referer': url} sourceSX = requests.get(url, headers=headers) return re.findall('(?s)<a href="([^"]+)".*?<img src="([^"]+)".*?alt="(.*?)"', re.findall('<h1 class.*?Deutsche TV.*?</h1>(?s)(.*?)<h2>', sourceSX.text)[0]) ]]>
+</expres>
+<page/>
+<cookieJar/>
+</regex>
+<regex>
+<name>get=URL</name>
+<expres>
+<![CDATA[ #$pyFunction import requests, re def GetLSProData(page_data,Cookie_Jar,m): ua = 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36' headers = {'User-Agent': ua,'Referer': '[makelist.param1]'} if 'm3u8' in page_data: return re.findall('file:.+?(http.*m3u8.*?)[\'\"]', page_data)[0]+'|User-Agent='+ua+'Referer=[makelist.param1]' else: #get streamurl from iframe item = re.findall('<iframe src="(.*?)"', page_data)[0] source = requests.get(item, headers=headers) return re.findall(r'file:.*?[\'"](http.*?m3u.*?)[\'"]', source.text)[0]+'|User-Agent='+ua+'Referer='+item ]]>
+</expres>
+<page>[makelist.param1]</page>
+<referer>http://www.tv-de.com/category/deutsche-tv/</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36</agent>
+<cookieJar/>
+</regex>
+</item>
+<item>
+<title>[COLOR cyan]Deutsche Sender mit Sky (täglich neue Listen)[/COLOR]</title>
+<link>$doregex[leg]</link>
+<regex>
+<name>leg</name>
+<listrepeat>
+<![CDATA[ <title>[leg.param2]</title> <link>$doregex[list]</link> ]]>
+</listrepeat>
+<expres>
+<![CDATA[ <h2 class="post-title".+?href="https(.+?)">(.*?)</a> ]]>
+</expres>
+<page>https://www.dailyiptvlist.com/europe/germany/</page>
+</regex>
+<regex>
+<name>list</name>
+<listrepeat>
+<![CDATA[ <title>[list.param2]</title> <link>$doregex[m3ulist]$$TSDOWNLOADER$$</link> ]]>
+</listrepeat>
+<expres>
+<![CDATA[ <a href="(.*?)">Download.*?IpTV(.*?)</a> ]]>
+</expres>
+<page>http[leg.param1]</page>
+</regex>
+<regex>
+<name>m3ulist</name>
+<listrepeat>
+<![CDATA[ <title>[m3ulist.param1]</title> <link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;url=[m3ulist.param2]</link> ]]>
+</listrepeat>
+<expres>
+<![CDATA[ :-1,[DE:](.*?)\n(.+) ]]>
+</expres>
+<page>[list.param1]</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 9_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/47.0.2526.70 Mobile/13C71 Safari/601.1.46</agent>
+<Referer>[list.param1]</Referer>
+<cookieJar/>
+<Accept>text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</Accept>
+<Connection>keep-alive</Connection>
+</regex>
+</item>
+<item>
+<title>[COLOR cyan]Alle deutsche TV und Radio Sender Free[/COLOR]</title>
+<link>ignoreme</link>
+<externallink>https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/iptv/kodi/kodi.m3u</externallink>
+<!--  <externallink>https://github.com/jnk22/kodinerds-iptv/raw/master/iptv/kodi/kodi.m3u</externallink>  -->
+</item>
+<!-- 
+######
+sender, die funktionieren aber nicht erreichbar sind
+#######
+
+<item>
+<title>[COLOR gold]deutsche private Sender [/COLOR] ustreamix.com [COLOR RED]neu (Benötigt Addon: sportsdevil)[/COLOR]</title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2]</title>
+<sportsdevil>https://ssl.ustreamix.com[makelist.param1]</sportsdevil>
+<referer>https://ssl.ustreamix.com/</referer>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re
+import HTMLParser
+import sys
+reload(sys)
+sys.setdefaultencoding("utf-8")
+def GetLSProData(page_data,Cookie_Jar,m):#vbprofi
+ parser = HTMLParser.HTMLParser()
+ s = re.sub("(&.+?;)", lambda m: parser.unescape(m.group()), page_data)
+ items = re.findall('<a.*?href="(.*?)".*?">(.*?)<', re.findall('<h3>Channel Listing</h3>(?s).*?">Green</font> = Live / OK</p>', s)[0])
+ mylist = ['Germ', 'de', 'zdf', 'Erste', 'kabel', 'pro'] #['RTL', 'RTL', 'Sat1', '3Sat']
+ chs = []
+ for title, url in items:
+  if any([x.lower() in title.lower() for x in mylist]):
+   title = '00' + title
+  else:
+   title = '99' + title
+  chs.append((title, url))
+ myorder = []
+ for title, url in sorted(chs):
+  myorder.append((title[2:], url))
+ return myorder
+]]></expres>
+<page>https://ssl.ustreamix.com/</page>
+<Referer>https://ssl.ustreamix.com/</Referer>
+<agent>Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3</agent>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+<item>
+<title>[COLOR gold]Weltweit mit sky[/COLOR] FreeIPTV [COLOR RED]neu[/COLOR]</title>
+<link>$doregex[cristal]</link>
+
+    <regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('https://freeiptv.io/playlists/',Cookie_Jar,'Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1')</page>
+        <cookieJar></cookieJar>
+    </regex>
+
+<regex>
+<name>cristal</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][cristal.param2][/COLOR]</title>
+<thumbnail></thumbnail>  
+<fanart></fanart>
+<link>$doregex[canal]</link>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re
+def GetLSProData(page_data,Cookie_Jar,m):#picapau
+ return re.findall('(?s)<option value=".*?>\((.*?)\).(.*?)<',re.findall('<select id="select\_country.+?>(?s)(.*?)</select>',page_data)[0])
+]]></expres>
+<page>https://freeiptv.io/playlists/</page>
+</regex>
+<regex>
+<name>canal</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][canal.param1][/COLOR]</title>
+<thumbnail></thumbnail>  
+<fanart></fanart>
+<link>ignore</link>
+<externallink>$doregex[url]</externallink>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re
+def GetLSProData(page_data,Cookie_Jar,m):#picapau
+# return re.findall('(?s)<option value=".*?>\((.*?)\).(.*?)<',re.findall('Select Your Playlist.+?>(?s)(.*?)</select>',page_data)[0])
+ return re.findall('(?s)<option value=".*?>\((.*?)\).(.*?)<', re.findall('<select id="select_playlist".+?>(?s)(.*?)</select>',page_data)[0])
+]]></expres>
+<page>https://freeiptv.io/playlists/</page>
+<Referer>https://freeiptv.io/playlists/</Referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:45.0) Gecko/20100101 Firefox/45.0</agent>
+<Accept>text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</Accept>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+<ignorecache />
+</regex>
+<thumbnail></thumbnail>  
+<fanart></fanart>
+
+<regex>
+<name>url</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):#vbprofi
+ string = '[canal.param2]'
+ lang = '?c=[cristal.param1]'
+ if 'Adult' in string:
+   return string  + '$$TSDOWNLOADER$$' #.replace('m3u', 'xml')
+ elif 'Adult' not in string:
+   return string + lang + '$$TSDOWNLOADER$$'
+]]></expres>
+<page></page>
+</regex>
+</item>
+
+
+
+<item>
+<title>[COLOR gold]deutsche private Sender[/COLOR] freelivetv.de</title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR cyan][makelist.param2][/COLOR]</title>
+<link>$doregex[getUrl]</link>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re,requests,base64
+def GetLSProData(page_data,Cookie_Jar,m):
+	data = re.findall('<a href="(germany-.*?)".*title="(.*?)"',page_data)
+	return data
+]]></expres>
+<page>https://www.freelivetv.de/kanal/germany/</page>
+<referer>https://www.freelivetv.de/kanal/germany/</referer>
+<accept>text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</accept>
+<agent>iPad</agent>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+import re,requests,base64
+def GetLSProData(page_data,Cookie_Jar,m):
+  data=re.search(r'Player.*\n.*"(.*?)","(\d+)"',page_data)
+  source=requests.post('https://www.freelivetv.de/[makelist.param1]',headers={'User-Agent':'iPad','Referer':'https://www.freelivetv.de/[makelist.param1]','Accept':'*/*','X-Requested-With':'XMLHttpRequest'},data={'hash':data.group(1),'id':data.group(2)}).text
+  return base64.b64decode(re.findall('(.*)',source)[0][::-1]+'===')+'|User-Agent=iPad'
+]]></expres>
+<page>https://www.freelivetv.de/[makelist.param1]</page>
+<referer>https://www.freelivetv.de/[makelist.param1]</referer>
+<accept>text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</accept>
+<agent>iPad</agent>
+<cookieJar></cookieJar>
+</regex>
+</item>
+ -->
+</items>
