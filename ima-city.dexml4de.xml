@@ -4,8 +4,9 @@ quelle für deutsche und internationale free tv und radio
 https://github.com/jnk22/kodinerds-iptv
  -->
 <item>
-<title>[COLOR lime][B] Golfi [/B][/COLOR]</title>
-<link>no</link>
+<title>[COLOR lime][B] CANALSAT [/B][/COLOR]</title>
+<link>ignoreme</link>
+<externallink>https://github.com/jnk22/kodinerds-iptv/raw/master/iptv/kodi/kodi_tv_main.m3u</externallink>
 </item>
 <item>
 <title>CANALSAT-1</title>
